@@ -14,6 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
 }
+
 h1,
 h2,
 h3,
@@ -23,6 +24,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 /* =====HEADER START====== */
 .header {
   border-bottom: 1px solid #ececec;
@@ -38,6 +40,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 .logo {
   margin-left: 0px;
   margin-right: 93px;
@@ -49,9 +52,11 @@ p {
   letter-spacing: 0.03em;
   color: #000000;
 }
+
 .logo-style {
   color: var(--accent-color);
 }
+
 .marker-list .header-contacts,
 .contacts-link-last,
 .benefits-list,
@@ -109,14 +114,17 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .contacts-menu-link:last-child {
   margin-right: 0;
 }
+
 .header-contacts-menu {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-contacts-menu:last-child {
   margin-left: 50px;
 }
@@ -135,9 +143,11 @@ p {
   color: var(--secondary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .active-page {
   color: var(--accent-color);
 }
+
 .contact-heder-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -172,6 +182,7 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* секция HERO   */
 .hero {
   padding-top: 200px;
@@ -212,6 +223,7 @@ p {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
 .button {
   padding: 10px 32px;
   border: 0px;
@@ -259,9 +271,11 @@ p {
   width: 270px;
   margin-right: 30px;
 }
+
 .benefits-item:last-child {
   margin-right: 0;
 }
+
 .icon-wrap {
   display: flex;
   justify-content: center;
@@ -297,6 +311,7 @@ p {
 .our-job {
   padding-top: 0;
 }
+
 .our-job-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -314,9 +329,11 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .box-comp {
   position: relative;
 }
+
 .text-on-img {
   position: absolute;
   bottom: 0;
@@ -333,6 +350,7 @@ p {
   color: white;
   background: rgba(47, 48, 58, 0.8);
 }
+
 /* our team */
 /* Наша команда */
 
@@ -396,6 +414,7 @@ p {
   gap: 10px;
   margin-top: 16px;
 }
+
 .link-social-icon {
   display: flex;
   justify-content: center;
@@ -437,6 +456,7 @@ p {
 
   color: var(--secondary-color);
 }
+
 .regular-customers-link-icon {
   display: flex;
   width: 170px;
@@ -449,22 +469,28 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .regular-customers-icon {
   fill: currentColor;
 }
+
 .regular-customers-element {
   display: flex;
 }
+
 .regular-customers-item {
   margin-right: 30px;
 }
+
 .regular-customers-item:last-child {
   margin-right: 0;
 }
+
 .regular-customers-link-icon:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
 /* footer */
 
 .footer {
@@ -494,6 +520,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--text-color-white);
 }
+
 .post-adress:last-child {
   margin-bottom: 0px;
 }
@@ -516,6 +543,7 @@ p {
 .address-tel:focus {
   color: var(--accent-color);
 }
+
 .footer-connection {
   display: flex;
   align-items: baseline;
@@ -528,6 +556,7 @@ p {
 .link-wrapper {
   margin-right: 70px;
 }
+
 .conection {
   font-weight: 700;
   font-size: 14px;
@@ -537,15 +566,19 @@ p {
 
   color: var(--text-color-white);
 }
+
 .conection-title {
   margin-bottom: 20px;
 }
+
 .footer-social-link {
   margin-right: 10px;
 }
+
 .footer-social-link:last-child {
   margin-right: 0;
 }
+
 .footer-link-social-icon {
   display: flex;
   align-items: center;
@@ -557,10 +590,12 @@ p {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-link-social-icon:hover,
 .footer-link-social-icon:focus {
   background-color: var(--hover-color);
 }
+
 /* Портфолио */
 
 /*список кнопок фильтра*/
@@ -569,9 +604,11 @@ p {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .btn {
   margin-right: 8px;
 }
+
 .btn:last-child {
   margin-right: 0;
 }
@@ -582,6 +619,7 @@ p {
   gap: 30px;
   justify-content: space-between;
 }
+
 img {
   display: block;
 }
@@ -637,6 +675,7 @@ img {
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
 .cards {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,7 +740,7 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -709,10 +748,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 528px;
   height: 581px;
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -737,7 +774,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .modal-close-icon {
-  fill: var(--secondary-color);
+  /*
+  fill: var(--secondary-color);*/
+  fill: currentColor;
 }
+
 /* BACKDROP END*/
