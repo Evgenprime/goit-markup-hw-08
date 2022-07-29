@@ -956,12 +956,10 @@ img {
 
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
-  transition: opacity var(--anim-fast);
 }
 
 .register-icon-check {
   opacity: 0;
-  transition: opacity var(--anim-fast);
 }
 
 .register-checkbox:checked + .register-icon .register-icon-check {
