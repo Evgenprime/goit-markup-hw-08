@@ -1,0 +1,33 @@
+img {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+.marker-list,
+.header-contacts,
+.benefits-list,
+.our-job-item,
+.our-job-item-last,
+.our-team-list,
+.contacts-link,
+.address,
+.regular-customers-item,
+.button-list,
+.footer-social-link,
+.portfolio-list {
+    list-style: none;
+}
+
+.link-img,
+.footer-logo,
+.address-mail,
+.address-tel {
+    text-decoration: none;
+}

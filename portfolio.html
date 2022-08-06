@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="./css/main.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -23,35 +23,36 @@
   <header class="header">
     <div class="container header-container">
       <div class="flex-container">
-        <a href="./index.html" class="logo"><span class="logo-style">Web</span>Studio</a>
-        <nav>
+        <a href="./index.html" class="logo"><span class="logo__style">Web</span>Studio</a>
+        <nav class="nav">
           <ul class="nav-list">
-            <li class="contacts-menu-link">
-              <a href="./index.html" class="contacts-link">Студия</a>
+            <li class="nav-list__contacts-menu">
+              <a href="./index.html" class="nav-list__link ">Студия</a>
             </li>
-            <li class="contacts-menu-link">
-              <a href="./portfolio.html" class="contacts-link current active-page">Портфолио</a>
+            <li class="nav-list__contacts-menu">
+              <a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфолио</a>
             </li>
-            <li class="contacts-menu-link">
-              <a href="#contacts" class="contacts-link">Контакты</a>
+            <li class="nav-list__contacts-menu">
+              <a href="#contacts" class="nav-list__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="header-contacts">
-          <li class="header-contacts-menu">
-            <a class="contacts-link-header" href="mailto:info@devstudio.com">
-              <svg class="contact-heder-icon" width="16" height="12">
+          <li class="header-contacts__menu">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contact-heder__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
 
-          <li class="header-contacts-menu">
-            <a class="contacts-link-header" href="tel:+380961111111"><svg class="contact-heder-icon" width="10"
-                height="16">
+          <li class="header-contacts__menu">
+            <a class="header-contacts__link" href="tel:+380961111111">
+              <svg class="contact-heder__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>+38 096 111 11 11</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -260,29 +261,31 @@
 
       <div class="conection">
         <p class="conection-title conection-text">Присоединяйтесь</p>
+
+
         <ul class="footer-social-link">
           <li class="footer-social-link">
             <a href="https://instagram.com" class="footer-link-social-icon">
-              <svg class="icon-social" width="20" height="20">
+              <svg class="social__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg></a>
           </li>
           <li class="footer-social-link">
             <a href="https://instagram.com" class="footer-link-social-icon">
-              <svg class="icon-social" width="20" height="20">
+              <svg class="social__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter  "></use>
               </svg></a>
           </li>
           <li class="footer-social-link">
             <a href="https://instagram.com" class="footer-link-social-icon">
-              <svg class="icon-social" width="20" height="20">
+              <svg class="social__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook
     "></use>
               </svg></a>
           </li>
           <li class="footer-social-link">
             <a href="https://instagram.com" class="footer-link-social-icon">
-              <svg class="icon-social" width="20" height="20">
+              <svg class="social__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin
     "></use>
               </svg></a>
