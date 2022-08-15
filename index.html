@@ -22,8 +22,13 @@
   <header class="header">
     <div class="container header-container">
       <div class="flex-container">
-        <a href="./index.html" class="logo"><span class="logo__style">Web</span>Studio</a>
         <nav class="nav">
+          <a href="./index.html" class="logo"><span class="logo__style">Web</span>Studio</a>
+          <button class="menu-btn" type="button" data-menu-open="">
+            <svg class="menu_icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu_icon--open" href="./images/icons.svg#menu_open"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li class="nav-list__contacts-menu">
               <a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a>
@@ -35,33 +40,31 @@
               <a href="#contacts" class="nav-list__link">Контакты</a>
             </li>
           </ul>
+          <ul class="header-contacts">
+            <li class="header-contacts__menu">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contact-heder__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+
+            <li class="header-contacts__menu">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg class="contact-heder__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
         </nav>
-
-        <ul class="header-contacts">
-          <li class="header-contacts__menu">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contact-heder__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
-          </li>
-
-          <li class="header-contacts__menu">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="contact-heder__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-
-        </ul>
       </div>
     </div>
   </header>
   <main>
-    <!-- SECTION HERO START -->
-    <section class="section hero">
+    <!-- SECTION HERO START-->
+    <section class="hero">
       <div class="container">
         <h1 class="hero__title">
-          Эффективные решения <br>
+          Эффективные решения <br />
           для вашего бизнеса
         </h1>
 
@@ -71,8 +74,8 @@
       </div>
     </section>
     <!-- SECTION HERO END -->
-    <!-- SECTION  benefits  особенности-->
 
+    <!-- SECTION  benefits  особенности-->
     <section class="section">
       <div class="container">
         <!-- заголовок h2 буде скритий -->
@@ -136,6 +139,7 @@
         </ul>
       </div>
     </section>
+
     <!-- SECTION Чем мы занимаемся START -->
     <section class="section our-job">
       <div class="container">
@@ -145,20 +149,44 @@
           <li class="our-job__item">
             <div class="our-job__comp">
               <!--элемент списка-->
-              <img class="" src="./images/box1.jpg" width="370" height="294" alt="лого1" />
+
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                      ./images/job/img@1x_lg-1.jpg 1x,
+                      ./images/job/img@2x_lg-1.jpg 2x
+                    " />
+                <img src="./images/job/img@1x_lg-1.jpg" alt="Пишем код" width="370" height="294" />
+              </picture>
 
               <p class="our-job__text">Десктопные приложения</p>
             </div>
           </li>
           <li class="our-job__item">
             <div class="our-job__comp">
-              <img src="./images/box2.jpg" width="370" height="294" alt="лого2" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                      ./images/job/img@1x_lg-2.jpg 1x,
+                      ./images/job/img@2x_lg-2.jpg 2x
+                    " />
+
+                <img src="./images/job/img@1x_lg-2.jpg" loading="lazy" alt="Мобильный телефон" width="370"
+                  height="294" />
+
+              </picture>
+
               <p class="our-job__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="our-job__item">
             <div class="our-job__comp">
-              <img src="./images/box3.jpg" width="370" height="294" alt="лого3" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="
+                      ./images/job/img@1x_lg-3.jpg 1x,
+                      ./images/job/img@2x_lg-3.jpg 2x
+                    " />
+                <img src="./images/job/img@1x_lg-3.jpg" loading="lazy" alt="Создаем дизайн" width="370" height="294" />
+              </picture>
+
               <p class="our-job__text">Дизайнерские решения</p>
             </div>
           </li>
@@ -173,7 +201,24 @@
         <h2 class="our-team__title">Наша команда</h2>
         <ul class="our-team__list">
           <li class="our-team__item">
-            <img src="./images/igor.jpg" width="270" height="260" alt="Игорь Демьяненко" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                    ./images/team/img-1@1x_lg.jpg 1x,
+                    ./images/team/img-1@2x_lg.jpg 2x
+                  " />
+
+              <source media="(min-width: 768px)" srcset="
+                    ./images/team/img-1@1x_md.jpg 1x,
+                    ./images/team/img-1@2x_md.jpg 2x
+                  " />
+
+              <source media="(max-width: 767px)" srcset="
+                    ./images/team/img-1@1x_sm.jpg 1x,
+                    ./images/team/img-1@2x_sm.jpg 2x
+                  " />
+              <img class="team__img" src="./images/team/img-1@1x_sm.jpg" alt="фото Игоря Демьяненко" />
+            </picture>
+
             <div class="our-team__block">
               <h3 class="our-team__subtitle">Игорь Демьяненко</h3>
               <p class="our-team__text">Product Designer</p>
@@ -188,8 +233,7 @@
                 <li>
                   <a href="https://twitter.com/" class="social__link">
                     <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter">
-                      </use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -209,7 +253,24 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img src="./images/olga.jpg" width="270" height="260" alt="Ольга Репина" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                    ./images/team/img-2@1x_lg.jpg 1x,
+                    ./images/team/img-2@2x_lg.jpg 2x
+                  " />
+
+              <source media="(min-width: 768px)" srcset="
+                    ./images/team/img-2@1x_md.jpg 1x,
+                    ./images/team/img-2@2x_md.jpg 2x
+                  " />
+
+              <source media="(max-width: 767px)" srcset="
+                    ./images/team/img-2@1x_sm.jpg 1x,
+                    ./images/team/img-2@2x_sm.jpg 2x
+                  " />
+              <img class="team__img" src="./images/team/img-2@1x_sm.jpg" alt="фото Ольги Репиной" />
+            </picture>
+
             <div class="our-team__block">
               <h3 class="our-team__subtitle">Ольга Репина</h3>
               <p class="our-team__text">Frontend Developer</p>
@@ -223,8 +284,7 @@
                 <li>
                   <a href="https://twitter.com/" class="social__link">
                     <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter">
-                      </use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -244,7 +304,24 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img src="./images/nikolay.jpg" width="270" height="260" alt="Николай Тарасов" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                    ./images/team/img-3@1x_lg.jpg 1x,
+                    ./images/team/img-3@2x_lg.jpg 2x
+                  " />
+
+              <source media="(min-width: 768px)" srcset="
+                    ./images/team/img-3@1x_md.jpg 1x,
+                    ./images/team/img-3@2x_md.jpg 2x
+                  " />
+
+              <source media="(max-width: 767px)" srcset="
+                    ./images/team/img-3@1x_sm.jpg 1x,
+                    ./images/team/img-3@2x_sm.jpg 2x
+                  " />
+              <img class="team__img" src="./images/team/img-3@1x_sm.jpg" alt="фото Николая Тарасова" />
+            </picture>
+
             <div class="our-team__block">
               <h3 class="our-team__subtitle">Николай Тарасов</h3>
               <p class="our-team__text">Marketing</p>
@@ -258,8 +335,7 @@
                 <li>
                   <a href="https://twitter.com/" class="social__link">
                     <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter">
-                      </use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -279,7 +355,23 @@
             </div>
           </li>
           <li class="our-team__item">
-            <img src="./images/mihail.jpg" width="270" height="260" alt="Михаил Ермаков" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                    ./images/team/img-4@1x_lg.jpg 1x,
+                    ./images/team/img-4@2x_lg.jpg 2x
+                  " />
+
+              <source media="(min-width: 768px)" srcset="
+                    ./images/team/img-4@1x_md.jpg 1x,
+                    ./images/team/img-4@2x_md.jpg 2x
+                  " />
+
+              <source media="(max-width: 767px)" srcset="
+                    ./images/team/img-4@1x_sm.jpg 1x,
+                    ./images/team/img-4@2x_sm.jpg 2x
+                  " />
+              <img class="team__img" src="./images/team/img-4@1x_sm.jpg" alt="фото Михаила Ермакова" />
+            </picture>
 
             <div class="our-team__block">
               <h3 class="our-team__subtitle">Михаил Ермаков</h3>
@@ -294,8 +386,7 @@
                 <li>
                   <a href="https://twitter.com/" class="social__link">
                     <svg class="social__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter">
-                      </use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -321,7 +412,7 @@
     <!--Постоянные клиенты */-->
     <section class="clients">
       <div class="container">
-        <h2 class="title">Постоянные клиенты</h2>
+        <h2 class="title">Постоянные&nbsp;клиенты</h2>
 
         <ul class="clients-list">
           <li class="clients-list__item">
@@ -345,7 +436,6 @@
           </li>
           <li class="clients-list__item">
             <a href="" class="clients-list__link">
-
               <svg class="clients-list__icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-foster"></use>
               </svg></a>
@@ -389,7 +479,6 @@
       <div class="conection">
         <p class="conection-title conection-text">Присоединяйтесь</p>
 
-
         <ul class="footer-social-link">
           <li class="footer-social-link">
             <a href="https://instagram.com" class="footer-link-social-icon">
@@ -422,7 +511,7 @@
       <!--КНОПКА ПІДПИСКИ НА РОЗСИЛКУ-->
       <div class="footer-form">
         <p class="form-title conection-text">Подпишитесь на рассылку</p>
-        <form>
+        <form class="wraper-btn">
           <label>
             <input class="footer-input" placeholder="E-mail" />
           </label>
@@ -437,9 +526,7 @@
     </div>
   </footer>
 
-
-
-
+  <!-- Модальное окно с бекдропом -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="btn-modal" type="button" data-modal-close>
@@ -499,6 +586,70 @@
       </form>
     </div>
   </div>
+  -->
+
+  <!--mobile menu-->
+  <div class="menu-overlay" data-menu>
+    <div class="menu-conteiner">
+      <button class="menu-btn" type="button" data-menu-close>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use class="menu_icon--close" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu__list list">
+        <li class="menu__item">
+          <a class="menu__link link" href="./index.html">Студія</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contacts list">
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__phone link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+
+        <li class="menu-contacts__item">
+          <a class="menu-contacts__mail link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="menu__socials-list list">
+        <li class="menu__socials-item">
+          <a href="https://www.instagram.com/" class="menu__socials-link link" rel="noopener noreferrer"
+            aria-label="instagram">Instagram
+          </a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="https://twitter.com/" class="menu__socials-link link" rel="noopener noreferrer"
+            aria-label="twitter">Twitter
+          </a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="https://uk-ua.facebook.com/" class="menu__socials-link link" rel="noopener noreferrer"
+            aria-label="facebook">Facebook
+          </a>
+        </li>
+        <li class="menu__socials-item">
+          <a href="https://www.linkedin.com/" class="menu__socials-link link" rel="noopener noreferrer"
+            aria-label="linkedin">Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/menu-modal.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

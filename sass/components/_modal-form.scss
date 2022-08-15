@@ -3,9 +3,10 @@
   display: block;
   margin-bottom: 10px;
 
-        &:last-child {
-       margin-bottom: 0;
-  }}
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .register-form-label {
   display: block;
@@ -32,10 +33,11 @@
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus {
+  &:focus {
     outline: 0;
     border-color: var(--hover-color);
-  }}
+  }
+}
 
 .register-form-icon {
   position: absolute;
@@ -43,19 +45,14 @@
   left: 12px;
   transition: fill 1s cubic-bezier(0.4, 0, 0.2, 1);
 
-     &:focus {
+  &:focus {
     fill: var(--hover-color);
-  }}
+  }
+}
 
-  
 .register-form-input:focus + .register-form-icon {
   fill: var(--hover-color);
 }
-
-
-
-
-
 
 .register-form-message {
   width: 100%;
@@ -71,10 +68,10 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-      outline: 0;
-      border-color: var(--hover-color);
-    }}
-
+    outline: 0;
+    border-color: var(--hover-color);
+  }
+}
 
 .register-form-message::placeholder {
   font-style: normal;
@@ -84,7 +81,6 @@
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 
 .register-form-agreement {
   margin-bottom: 30px;
@@ -99,30 +95,33 @@
 }
 */
 .register-icon-uncheck {
-    opacity: 1;
-   .register-checkbox:checked + .register-icon & {
+  opacity: 1;
+  .register-checkbox:checked + .register-icon & {
     opacity: 0;
-    }}
-
+  }
+}
 
 .register-icon-check {
-    opacity: 0;
-    .register-checkbox:checked+.register-icon & {
-     opacity: 1;
-     }}
-
+  opacity: 0;
+  .register-checkbox:checked + .register-icon & {
+    opacity: 1;
+  }
+}
 
 /* СПАН ТЕКСТА*/
 .register-form-agreement-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 14px;
+  //font-size: 14px;
+  //line-height: 24px;
+  //letter-spacing: 0.03em;
   user-select: none;
   text-underline-position: under;
   color: var(--pimary-color);
 }
+
 /*СПАН ЛІНКУ*/
 .register-form-agreement-link {
   color: var(--accent-color);
