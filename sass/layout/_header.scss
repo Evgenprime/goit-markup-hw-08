@@ -17,9 +17,9 @@
 }
 .header {
    padding-top: 10px;
-   padding-right: 15px;
+  // padding-right: 15px;
 padding-bottom: 10px;
-padding-left: 15px;
+//padding-left: 15px;
         border-bottom: 1px solid #ececec;
         @media screen and (min-width: 768px) {
                 padding: 0;
@@ -133,17 +133,30 @@ display: flex;
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--pimary-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    letter-spacing: 0.02em;
     &:hover,
     &:focus {
         color: var(--accent-color);
+       
+
+        
     }
 }
+.header-contacts__link {
+@media screen and (min-width: 1200px) {
+        
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        line-height: 1.14;
+     
+    }}
 
 .contact-heder__icon {
     margin-right: 10px;

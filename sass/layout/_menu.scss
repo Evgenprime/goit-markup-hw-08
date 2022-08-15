@@ -64,7 +64,7 @@
     flex-direction: column;
 
     max-width: 100%;
-    height: 796px;
+    height: 100%;
     background-color: #fff;
     padding: 50px 40px;
 
@@ -104,11 +104,15 @@
     list-style: none;
     display: inline-block;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 32px;
+
+    @media screen and (min-width: 480px) {
+            font-size: 34px;
+        }
 }
 
 .menu-contacts__mail {
@@ -127,11 +131,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
-.menu__socials-item {
-    padding-right: 5px;
+.menu__socials-item:not(:last-child) {
+    padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
